@@ -12,29 +12,22 @@ const axios = require('axios');
 
 const BASE_URL = 'http://dnd5eapi.co/api'
 
-async function getSpellByIndex(index) {
-  const response = await axios.get(`${BASE_URL}/spells/${index}`);
-  return response.data;
-}
-
-
-
 const QueryType = new GraphQLObjectType({
   name: 'Query',
   description: 'Root Query',
 
   fields: () => ({
-    spell: {
-      type: SpellType,
-      args: {
-        index: {
-          type: GraphQLInt
-        }
-      },
-      resolve: (root, args) => {
-        return getSpellByIndex(args.index);
-      }
-    },
+    // spell: {
+    //   type: SpellType,
+    //   args: {
+    //     index: {
+    //       type: GraphQLInt
+    //     }
+    //   },
+    //   resolve: (root, args) => {
+    //     return getSpellByIndex(args.index);
+    //   }
+    // },
     spells: {
       type: new GraphQLList(SpellType),
       resolve: async () => {
@@ -46,17 +39,17 @@ const QueryType = new GraphQLObjectType({
         return dataToSend;
       }
     },
-    class: {
-      type: ClassType,
-      args: {
-        index: {
-          type: GraphQLInt
-        }
-      },
-      resolve: (root, args) => {
-        return getClassByIndex(args.index);
-      }
-    },
+    // class: {
+    //   type: ClassType,
+    //   args: {
+    //     index: {
+    //       type: GraphQLInt
+    //     }
+    //   },
+    //   resolve: (root, args) => {
+    //     return getClassByIndex(args.index);
+    //   }
+    // },
     classes: {
       type: new GraphQLList(ClassType),
       resolve: async () => {
