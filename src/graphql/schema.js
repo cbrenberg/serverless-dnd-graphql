@@ -14,7 +14,7 @@ const ClassesQuery = require('../graphql/queries/Classes');
 
 
 const RootQuery = new GraphQLObjectType({
-  name: 'Root Query',
+  name: 'Root',
   description: 'This is the default query provided by this application',
 
   fields: {
