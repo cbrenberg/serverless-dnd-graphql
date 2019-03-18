@@ -1,5 +1,5 @@
 {
-  "name": "serverless-dnd-slackbot",
+  "name": "serverless-dnd-graphql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cbrenberg/serverless-dnd-slackbot.git"
+    "url": "git+https://github.com/cbrenberg/serverless-dnd-graphql.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cbrenberg/serverless-dnd-slackbot/issues"
+    "url": "https://github.com/cbrenberg/serverless-dnd-graphql/issues"
   },
-  "homepage": "https://github.com/cbrenberg/serverless-dnd-slackbot#readme",
+  "homepage": "https://github.com/cbrenberg/serverless-dnd-graphql#readme",
   "dependencies": {
     "aws-serverless-express": "^3.3.5",
     "axios": "^0.18.0",
