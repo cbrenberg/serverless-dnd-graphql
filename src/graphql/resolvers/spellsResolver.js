@@ -2,7 +2,7 @@
 
 const axios = require('axios');
 
-const ClassesController = {
+const SpellsController = {
   index: (args) => {
     return axios.get(`${process.env.BASE_URL}/spells`)
       .then(response => {
@@ -19,4 +19,4 @@ const ClassesController = {
   }
 }
 
-module.exports = ClassesController;
+module.exports = SpellsController;
